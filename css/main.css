@@ -126,7 +126,7 @@ h1 {
 }
 
 .title {
-  font-size: 3.6rem;
+  font-size: 2.813vw;
   font-weight: bold;
   color: #6F7579;
   line-height: 48px;
@@ -262,7 +262,7 @@ header .sns_link {
   transform: translate(-50%, -50%);
   z-index: 10;
   color: #959EA7;
-  font-size: 12rem;
+  font-size: 9.375vw;
 }
 #content .content__inner__box .portrait:before {
   content: "";
