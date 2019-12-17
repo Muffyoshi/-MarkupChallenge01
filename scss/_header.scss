@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+header {
+    width: 200px;
+    height: 100vh;
+    position: relative;
+    background-color: $bg_color_01;
+    .header__inner {
+        height: 171px;
+        position: absolute;
+        top: 41px;
+        left: 41px;
+        display: flex;
+        flex-direction: column;
+        .manu {
+            height: 126px;
+            margin-top: 36px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            font-size: $manu_f_size;
+            color: $f_color_02;
+        }
+    }
+    .sns_link {
+        width: 84px;
+        position: absolute;
+        bottom: 50px;
+        left: 56px;
+        display: flex;
+        justify-content: space-between;
+        font-size: $sns_f_size;
+        color: $f_color_01;
+    }
+}

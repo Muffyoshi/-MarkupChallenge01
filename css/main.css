@@ -119,4 +119,44 @@ html {
   scroll-behavior: smooth;
 }
 
+h1 {
+  font-size: 1rem;
+  color: #FFFFFF;
+  font-weight: bolder;
+}
+
+header {
+  width: 200px;
+  height: 100vh;
+  position: relative;
+  background-color: #3B4043;
+}
+header .header__inner {
+  height: 171px;
+  position: absolute;
+  top: 41px;
+  left: 41px;
+  display: flex;
+  flex-direction: column;
+}
+header .header__inner .manu {
+  height: 126px;
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 1.2rem;
+  color: #CDD6DD;
+}
+header .sns_link {
+  width: 84px;
+  position: absolute;
+  bottom: 50px;
+  left: 56px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  color: #FFFFFF;
+}
+
 /*# sourceMappingURL=main.css.map */

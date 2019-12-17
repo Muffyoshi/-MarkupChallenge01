@@ -1,7 +1,8 @@
 @charset "utf-8";
 
 $logo_f_size: 1rem;
-$manu_f_size: 1.2px;
+$manu_f_size: 1.2rem;
+$sns_f_size: 1.6rem;
 $title_f_size: 3.6rem;
 $desc_f_size: 1.6rem;
 $btn_f_size: 1.2rem;
@@ -30,4 +31,10 @@ html {
     font-size: 62.5%;
     font-family: $main_f_family, sans-serif;
     scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: $logo_f_size;
+    color: $f_color_01;
+    font-weight: bolder;
 }
