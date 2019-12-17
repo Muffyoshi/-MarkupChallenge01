@@ -23,6 +23,7 @@
         &__desc {
             font-size: $desc_f_size;
             color: $f_color_03;
+            line-height: 30px;
         }
         &__btns {
             width: 250px;
@@ -31,11 +32,7 @@
             &__btn1{
                 background-color: $bg_color_01;
                 color: $f_color_01;
-            }
-            &__btn2{
-                background-color: $bg_color_02;
-                border: solid 2px $bd_color_01;
-                color: $f_color_04;
+                border: none;
             }
         }
     }

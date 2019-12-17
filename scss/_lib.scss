@@ -7,6 +7,7 @@ $title_f_size: 3.6rem;
 $desc_f_size: 1.6rem;
 $btn_f_size: 1.2rem;
 $label_f_size: 1.8rem;
+$portrait_size: 12rem;
 
 $main_f_family: "源ノ角ゴシック JP";
 
@@ -23,6 +24,7 @@ $bg_color_04: #E2F8C2;
 $bg_color_05: #C2F6F8;
 $bg_color_06: #F8D7C2;
 $bg_color_07: #959EA7;
+$bg_color_08: rgba(0,0,0,0);
 
 $bd_color_01: #CDD6DD;
 
@@ -41,7 +43,9 @@ h1 {
 
 .title {
     font-size: $title_f_size;
+    font-weight: bold;
     color: $f_color_03;
+    line-height: 48px;
 }
 
 button {
@@ -50,6 +54,9 @@ button {
     width: 120px;
     height: 40px;
     border-radius: 4px;
-    border: none;
+    border: solid 2px $bd_color_01;
+    background-color: $bg_color_08;
     font-size: $btn_f_size;
+    font-weight: bold;
+    color: $f_color_04;
 }
