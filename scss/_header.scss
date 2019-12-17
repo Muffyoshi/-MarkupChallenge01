@@ -1,10 +1,13 @@
 @charset "utf-8";
 
 header {
-    width: 200px;
+    width: 15.625%;
     height: 100vh;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: $bg_color_01;
+    z-index: 10;
     .header__inner {
         height: 171px;
         position: absolute;

@@ -125,11 +125,29 @@ h1 {
   font-weight: bolder;
 }
 
+.title {
+  font-size: 3.6rem;
+  color: #6F7579;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  width: 120px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  font-size: 1.2rem;
+}
+
 header {
-  width: 200px;
+  width: 15.625%;
   height: 100vh;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: #3B4043;
+  z-index: 10;
 }
 header .header__inner {
   height: 171px;
@@ -157,6 +175,46 @@ header .sns_link {
   justify-content: space-between;
   font-size: 1.6rem;
   color: #FFFFFF;
+}
+
+#top_view {
+  background-color: #F0F3F5;
+  width: 84.375%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#top_view .top_view__inner {
+  width: 59.375%;
+  height: 325px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  z-index: 5;
+}
+#top_view .top_view__inner__desc {
+  font-size: 1.6rem;
+  color: #6F7579;
+}
+#top_view .top_view__inner__btns {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+}
+#top_view .top_view__inner__btns__btn1 {
+  background-color: #3B4043;
+  color: #FFFFFF;
+}
+#top_view .top_view__inner__btns__btn2 {
+  background-color: #F0F3F5;
+  border: solid 2px #CDD6DD;
+  color: #7F7F7F;
 }
 
 /*# sourceMappingURL=main.css.map */
