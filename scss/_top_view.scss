@@ -2,7 +2,7 @@
 
 #top_view {
     background-color: $bg_color_02;
-    width: 84.375%;
+    width: 100% - $header_width;
     height: 100vh;
     position: absolute;
     top: 0;

@@ -1,0 +1,51 @@
+footer {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    background-color: $bg_color_03;
+    line-height: 70px;
+    .footer__inner {
+        width: 100% - $header_width;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 5;
+        display: flex;
+        background-color: $bg_color_01;
+        h1{
+            margin-left: 4.63%;
+        }
+        .menu {
+            width: 43.611%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+    }
+    .top_btn {
+        width: 9.375%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 8;
+        background-color: $bg_color_07;
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            align-items: center;
+            z-index: 10;
+            font-size: $top_btn_f_size;
+            color: $f_color_01;
+        }
+    }
+}

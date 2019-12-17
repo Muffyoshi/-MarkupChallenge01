@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 header {
-    width: 15.625%;
+    width: $header_width;
     height: 100vh;
     position: relative;
     background-color: $bg_color_01;
@@ -13,14 +13,12 @@ header {
         left: 20.5%;
         display: flex;
         flex-direction: column;
-        .manu {
+        .menu {
             height: 126px;
             margin-top: 36px;
             display: flex;
             justify-content: space-between;
             flex-direction: column;
-            font-size: $manu_f_size;
-            color: $f_color_02;
         }
     }
     .sns_link {

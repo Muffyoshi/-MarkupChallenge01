@@ -1,13 +1,14 @@
 @charset "utf-8";
 
 $logo_f_size: 1rem;
-$manu_f_size: 1.2rem;
+$menu_f_size: 1.2rem;
 $sns_f_size: 1.6rem;
 $title_f_size: 3.6rem;
 $desc_f_size: 1.6rem;
 $btn_f_size: 1.2rem;
 $label_f_size: 1.8rem;
 $portrait_size: 12rem;
+$top_btn_f_size: 1.6rem;
 
 $main_f_family: "源ノ角ゴシック JP";
 
@@ -28,6 +29,7 @@ $bg_color_08: rgba(0,0,0,0);
 
 $bd_color_01: #CDD6DD;
 
+$header_width: 15.625%;
 
 html {
     font-size: 62.5%;
@@ -46,6 +48,11 @@ h1 {
     font-weight: bold;
     color: $f_color_03;
     line-height: 48px;
+}
+
+.menu {
+    font-size: $menu_f_size;
+    color: $f_color_02;
 }
 
 button {
