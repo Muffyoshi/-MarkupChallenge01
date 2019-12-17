@@ -1,27 +1,33 @@
 @charset "utf-8";
 
-@mixin pc {
-    @media screen and (min-width: 960px) {
-        @content;
-    }
-    
-}
+$logo_f_size: 1rem;
+$manu_f_size: 1.2px;
+$title_f_size: 3.6rem;
+$desc_f_size: 1.6rem;
+$btn_f_size: 1.2rem;
+$label_f_size: 1.8rem;
 
-@mixin tab {
-    @media screen and (max-width: 959px) {
-        @content;
-    }
-    
-}
+$main_f_family: "源ノ角ゴシック JP";
 
-@mixin sp {
-    @media screen and (max-width: 600px) {
-        @content;
-    }
-    
-}
+$f_color_01: #FFFFFF;
+$f_color_02: #CDD6DD;
+$f_color_03: #6F7579;
+$f_color_04: #7F7F7F;
+$f_color_05: #959EA7;
+
+$bg_color_01: #3B4043;
+$bg_color_02: #F0F3F5;
+$bg_color_03: #FFFFFF;
+$bg_color_04: #E2F8C2;
+$bg_color_05: #C2F6F8;
+$bg_color_06: #F8D7C2;
+$bg_color_07: #959EA7;
+
+$bd_color_01: #CDD6DD;
+
 
 html {
     font-size: 62.5%;
+    font-family: $main_f_family, sans-serif;
     scroll-behavior: smooth;
 }
