@@ -1,35 +1,55 @@
 @charset "utf-8";
 
 header {
-    width: $header_width;
+    width: $header_width;   //200pxくらいなら固定値の方がいい
     height: 100vh;
-    position: relative;
+    //絶対配置よりもこっちがいい。修正が楽になる----------
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    //-------------------------------------------------
+    // position: relative;
+    position: absolute;
     background-color: $bg_color_01;
     z-index: 10;
     .header__inner {
-        height: 171px;
-        position: absolute;
-        top: 41px;
-        left: 20.5%;
+        margin: 41px 0 0 41px;
+        // height: 171px;   //全体の高さは指定しない
+        // position: absolute;
+        // top: 41px;
+        // left: 20.5%;
         display: flex;
         flex-direction: column;
         .menu {
-            height: 126px;
+            // height: 126px;   //全体の高さは指定しない
             margin-top: 36px;
             display: flex;
             justify-content: space-between;
             flex-direction: column;
+            li {
+                margin-top: 19px;
+            }
+            li:first-child {
+                margin-top: 0;
+            }
         }
     }
     .sns_link {
-        width: 42%;
-        min-width: 60px;
-        position: absolute;
-        bottom: 50px;
-        left: 28%;
+        margin: 0 0 50px 56px;
+        // width: 42%;  //全体の幅は指定しない
+        // min-width: 60px;
+        // position: absolute;
+        // bottom: 50px;
+        // left: 28%;
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         font-size: $sns_f_size;
         color: $f_color_01;
+        a {
+            margin-left: 20px;
+        }
+        a:first-child {
+            margin-left: 0;
+        }
     }
 }

@@ -1,15 +1,20 @@
 @charset "utf-8";
 
 #top_view {
-    background-color: $bg_color_02;
-    width: 100% - $header_width;
+    margin-left: auto;  //widthの余りが左側のマージンになる
+    // width: 100%;
+    width: calc(100% - 200px);  //ウィンドウ幅からヘッダーの200pxを引く
     height: 100vh;
-    position: absolute;
-    top: 0;
-    right: 0;
+    //headerをabsoluteに変更したのでrelativeに
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    position: relative;
+    //----------------------------------------
+    background-color: $bg_color_02;
     .top_view__inner {
         width: 59.375%;
-        height: 325px;
+        // height: 325px;  //文字高さと間隔の合計が325pxになるようにする。
         position: absolute;
         top: 50%;
         left: 50%;
@@ -21,15 +26,18 @@
         z-index: 5;
 
         &__desc {
+            margin-top: 29px;
             font-size: $desc_f_size;
             color: $f_color_03;
             line-height: 30px;
         }
         &__btns {
-            width: 250px;
+            margin-top: 40px;
+            // width: 250px;
             display: flex;
-            justify-content: space-between;
+            // justify-content: space-between;
             &__btn1{
+                margin-right: 30px;
                 background-color: $bg_color_01;
                 color: $f_color_01;
                 border: none;

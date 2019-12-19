@@ -1,15 +1,18 @@
 @charset "utf-8";
 
 #content {
-    width: 100%;
-    height: 1232px;
+    margin-left: auto;  //widthの余りが左側のマージンになる
+    // width: 100%;
+    width: calc(100% - 200px);  //ウィンドウ幅からヘッダーの200pxを引く
+    // height: 1232px;  //boxの高さと間隔の合計が1232pxになるようにする。
     background-color: $bg_color_03;
     position: relative;
     .content__inner {
-        width: 56.172%;
-        height: 973px;
-        position: absolute;
-        top: 120px;
+        margin: 120px 0 139px 22.222%;  //position:absoluteをやめたのでマージンを追加
+        width: 66.574%;
+        // height: 973px;   //boxの高さと間隔の合計が973pxになるようにする。
+        // position: absolute;
+        // top: 120px;
         right: $content_margin_right;
         align-items: center;
         z-index: 5;
@@ -18,6 +21,7 @@
         flex-direction: column;
         align-items: center;
         &__box {
+            margin-top: 20px;
             width: 100%;
             height: 311px;
             position: relative;
@@ -46,12 +50,13 @@
                 padding-top: 100%;
             }
             &__inner {
+                margin: 33px 0 0 23.505%;
                 width: 72.322%;
-                height: 254px;
-                position: absolute;
-                top: 10.61%;
-                right: 4.172%;
-                z-index: 5;
+                // height: 254px;
+                // position: absolute;
+                // top: 10.61%;
+                // right: 4.172%;
+                // z-index: 5;
                 display: flex;
                 flex-direction: column;
                 .label {
@@ -62,13 +67,18 @@
                     margin-top: 29px;
                 }
                 button {
-                    position: absolute;
-                    right: 0;
-                    bottom: 0;
-                    z-index: 10;
+                    margin-top: 49px;
+                    margin-left: auto;
+                    // position: absolute;
+                    // right: 0;
+                    // bottom: 0;
+                    // z-index: 10;
 
                 }
             }
+        }
+        &__box:first-child {
+            margin-top: 0;
         }
     }
 }
